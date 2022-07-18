@@ -21,6 +21,8 @@ Follow the naming conventions exactly as instructed. The backend code will be in
 Models
 Url Model
 { urlCode: { mandatory, unique, lowercase, trim }, longUrl: {mandatory, valid url}, shortUrl: {mandatory, unique} }
+
+
 POST /url/shorten
 Create a short URL for an original url recieved in the request body.
 The baseUrl must be the application's baseUrl. Example if the originalUrl is http://abc.com/user/images/name/2 then the shortened url should be http://localhost:3000/xyz
@@ -33,6 +35,8 @@ Use a valid HTTP status code meant for a redirection scenario.
 Return a suitable error for a url not found
 Return HTTP status 400 for an invalid request
 Testing
+
+
 To test these apis create a new collection in Postman named Project 4 Url Shortner
 Each api should have a new request in this collection
 Each request in the collection should be rightly named. Eg Url shorten, Get Url etc
