@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-mongoose.connect("mongodb+srv://vaibhu:vaibhu123@cluster0.gvjopnc.mongodb.net/group32database", {
+mongoose.connect("mongodb+srv://dipalidatit-project:1epbeEqP4NFreEba@cluster0.tzfsd9f.mongodb.net/dipali1?retryWrites=true&w=majority", {
         useNewUrlParser: true
     })
     .then(() => console.log("MongoDb is connected")) // asynchronous behaviour
